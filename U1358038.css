@@ -1,0 +1,91 @@
+/* 基礎重置與全域樣式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #111111;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 頁首樣式 */
+header {
+    margin-bottom: 60px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* 音樂類型列表與卡片 */
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.genre-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 24px;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.genre-card:hover {
+    transform: translateY(-3px);
+    border-color: #111111;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.genre-tag {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #888888;
+    margin-bottom: 12px;
+}
+
+.genre-card h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.genre-card p {
+    font-size: 0.95rem;
+    color: #444444;
+}
+
+/* 頁尾樣式 */
+footer {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #999999;
+}
