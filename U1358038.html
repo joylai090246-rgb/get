@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>探索音樂風格</title>
+    <style>
+        /* 基礎重置與全域樣式 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #fcfcfc;
+            color: #111111;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 頁首樣式 */
+        header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #666666;
+            font-size: 1rem;
+        }
+
+        /* 音樂類型列表與卡片 */
+        .genre-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+
+        .genre-card {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 24px;
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .genre-card:hover {
+            transform: translateY(-3px);
+            border-color: #111111;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .genre-tag {
+            display: inline-block;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #888888;
+            margin-bottom: 12px;
+        }
+
+        .genre-card h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .genre-card p {
+            font-size: 0.95rem;
+            color: #444444;
+        }
+
+        /* 頁尾樣式 */
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #39C5BB;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>探索音樂風格</h1>
+            <p>感受聲音的多元樣貌與純粹脈動（點擊卡片探索更多）</p>
+        </header>
+
+        <main class="genre-grid">
+            <a href="https://www.google.com/search?q=爵士樂+Jazz" target="_blank" rel="noopener noreferrer" class="genre-card">
+                <span class="genre-tag">Genre 01</span>
+                <h2>爵士樂 (Jazz)</h2>
+                <p>起源於19世紀末，強調即興演奏、切分音與豐富的和聲變化，展現極高的自由度與個人風格。</p>
+            </a>
+
+            <a href="https://www.google.com/search?q=搖滾樂+Rock" target="_blank" rel="noopener noreferrer" class="genre-card">
+                <span class="genre-tag">Genre 02</span>
+                <h2>搖滾樂 (Rock)</h2>
+                <p>以電吉他、貝斯與爵士鼓為核心，節奏強烈且富有渲染力，是當代流行文化重要的聲音代表。</p>
+            </a>
+
+            <a href="https://www.google.com/search?q=古典樂+Classical+music" target="_blank" rel="noopener noreferrer" class="genre-card">
+                <span class="genre-tag">Genre 03</span>
+                <h2>古典樂 (Classical)</h2>
+                <p>擁有嚴謹結構與悠久歷史的西洋樂曲體系，注重管弦樂配器與細膩的情感表達。</p>
+            </a>
+
+            <a href="https://www.google.com/search?q=電子音樂+Electronic+music" target="_blank" rel="noopener noreferrer" class="genre-card">
+                <span class="genre-tag">Genre 04</span>
+                <h2>電子音樂 (Electronic)</h2>
+                <p>運用合成器與數位技術打造，強調重複的節奏與獨特的聲響設計，廣泛應用於現代流行與舞曲。</p>
+            </a>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Minimal Music Guide</p>
+        </footer>
+    </div>
+
+</body>
+</html>
